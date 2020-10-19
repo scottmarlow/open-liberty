@@ -17,8 +17,8 @@ import componenttest.app.FATServlet;
 
 @AdministeredObjectDefinition(name = "java:comp/env/jca/aod1",
                               description = "It is Test Administrator Object",
-                              //resourceAdapter = "fvtapp.adapter", //TODO add a seperate testcase for embedded RA
-                              resourceAdapter = "#adapter",
+                              //resourceAdapter = "fvtapp.adapter_administrator_object", //TODO add a seperate testcase for embedded RA
+                              resourceAdapter = "#adapter_administrator_object",
                               className = "com.ibm.adapter.message.FVTMessageProviderImpl",
                               interfaceName = "com.ibm.adapter.message.FVTBaseMessageProvider",
                               properties = {})
